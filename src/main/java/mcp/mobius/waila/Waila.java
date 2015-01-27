@@ -10,6 +10,7 @@ import cpw.mods.fml.common.event.*;
 import cpw.mods.fml.relauncher.Side;
 import mcp.mobius.waila.client.KeyEvent;
 import mcp.mobius.waila.server.ProxyServer;
+import mcp.mobius.waila.utils.ModIdentification;
 import net.minecraftforge.common.MinecraftForge;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -2,6 +2,7 @@ package mcp.mobius.waila.server;
 
 import cpw.mods.fml.common.Loader;
 import mcp.mobius.waila.Waila;
+import mcp.mobius.waila.api.IWailaRegistrar;
 
 import java.lang.reflect.Method;
 

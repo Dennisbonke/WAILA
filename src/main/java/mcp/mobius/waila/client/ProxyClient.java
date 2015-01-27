@@ -1,6 +1,13 @@
 package mcp.mobius.waila.client;
 
 import cpw.mods.fml.common.Loader;
+import mcp.mobius.waila.api.impl.ModuleRegistrar;
+import mcp.mobius.waila.cbcore.LangUtil;
+import mcp.mobius.waila.gui.truetyper.FontLoader;
+import mcp.mobius.waila.gui.truetyper.TrueTypeFont;
+import mcp.mobius.waila.handlers.HUDHandlerBlocks;
+import mcp.mobius.waila.handlers.HUDHandlerEntities;
+import mcp.mobius.waila.handlers.VanillaTooltipHandler;
 import mcp.mobius.waila.server.ProxyServer;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;

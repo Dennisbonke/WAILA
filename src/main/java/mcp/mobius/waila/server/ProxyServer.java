@@ -2,7 +2,13 @@ package mcp.mobius.waila.server;
 
 import cpw.mods.fml.common.Loader;
 import mcp.mobius.waila.Waila;
+import mcp.mobius.waila.addons.agriculture.AgricultureModule;
+import mcp.mobius.waila.addons.buildcraft.BCModule;
+import mcp.mobius.waila.addons.vanillamc.HUDHandlerVanilla;
 import mcp.mobius.waila.api.IWailaRegistrar;
+import mcp.mobius.waila.api.impl.ModuleRegistrar;
+import mcp.mobius.waila.handlers.DecoratorFMP;
+import mcp.mobius.waila.handlers.HUDHandlerFMP;
 
 import java.lang.reflect.Method;
 
@@ -86,7 +92,7 @@ public class ProxyServer {
     public void registerIMCs()
     {
         for (String s : ModuleRegistrar.instance().IMCRequests.keySet()) {
-            callbackRegistration(s, (String)ModuleRegistrar.instance().IMCRequests.get(s));
+            callbackRegistration(s, (String) ModuleRegistrar.instance().IMCRequests.get(s));
         }
     }
 

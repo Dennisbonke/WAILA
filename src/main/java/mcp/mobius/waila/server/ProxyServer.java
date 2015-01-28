@@ -4,6 +4,10 @@ import cpw.mods.fml.common.Loader;
 import mcp.mobius.waila.Waila;
 import mcp.mobius.waila.addons.agriculture.AgricultureModule;
 import mcp.mobius.waila.addons.buildcraft.BCModule;
+import mcp.mobius.waila.addons.carpenters.CarpentersModule;
+import mcp.mobius.waila.addons.enderio.EnderIOModule;
+import mcp.mobius.waila.addons.enderstorage.EnderStorageModule;
+import mcp.mobius.waila.addons.etb.ETBModule;
 import mcp.mobius.waila.addons.vanillamc.HUDHandlerVanilla;
 import mcp.mobius.waila.api.IWailaRegistrar;
 import mcp.mobius.waila.api.impl.ModuleRegistrar;
@@ -82,6 +86,8 @@ public class ProxyServer {
 
 
         AgricultureModule.register();
+
+        EnderIOModule.register();
         if (Loader.isModLoaded("ForgeMultipart"))
         {
             HUDHandlerFMP.register();
